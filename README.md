@@ -1,11 +1,14 @@
 # REDUX CRUD
 
-React-Redux App that where you can add, update, list and delete product list
+React-Redux App that where you can add, update, list and delete product list.
 
 ## Technologies
 
-React, Redux to manage the global state of the app
+- React
+- Redux
+- Json Server
+- Axios
 
 ## How to use
 
-Clone the repo, then npm install and npm start.
+Clone the repo, npm install and npm start to use the app
