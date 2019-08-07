@@ -26,8 +26,8 @@ class NewProduct extends Component {
     this.setState({ error: false });
 
     const productInfo = {
-      name: this.state.name,
-      price: this.state.price
+      name,
+      price
     };
     this.props.addProduct(productInfo);
     this.props.history.push("/");
