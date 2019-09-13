@@ -4,11 +4,12 @@ import {
   DELETE_PRODUCT,
   ADD_PRODUCT,
   EDIT_PRODUCT
-} from "./types";
+} from "../../constants/products";
 import axios from "axios";
 
 // Here we will make the calls to comunicate the reducer
 const baseUrl = "http://localhost:5000/products";
+
 export const showProducts = () => async dispatch => {
   const response = await axios.get(`${baseUrl}`);
   dispatch({
@@ -35,6 +36,7 @@ export const deleteProduct = id => async dispatch => {
 
 export const addProduct = data => async dispatch => {
   const response = await axios.post(`${baseUrl}`, data);
+
   dispatch({
     type: ADD_PRODUCT,
     payload: response.data

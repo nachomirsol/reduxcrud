@@ -2,7 +2,7 @@
   "products": [
     {
       "id": 0,
-      "name": "Pastel de Vainilla ",
+      "name": "Pastel de Vainillita",
       "price": "100"
     },
     {
@@ -29,6 +29,16 @@
       "name": "Pastel 5",
       "price": "100",
       "id": 8
+    },
+    {
+      "name": "crema Catalana",
+      "price": "30",
+      "id": 9
+    },
+    {
+      "name": "Pastel 5",
+      "price": "30",
+      "id": 10
     }
   ]
 }

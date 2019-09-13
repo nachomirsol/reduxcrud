@@ -1,17 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import { connect } from "react-redux";
-import { deleteProduct } from "../actions/productActions";
 
-class Product extends Component {
-  deleteProduct = () => {
-    const { id } = this.props.info;
-    this.props.deleteProduct(id);
-  };
-
-  render() {
-    const { id, name, price } = this.props.info;
-    return (
+const Product = ({ info, deleteItem }) => {
+  const { id, name, price } = info;
+  return (
+    <>
       <li className="list-group-item">
         <div className="row justify-content-between align-items-center">
           <div className="col-md-8 d-flex justify-content-between align-items-center">
@@ -23,7 +16,7 @@ class Product extends Component {
               Edit Product
             </Link>
             <button
-              onClick={id => this.deleteProduct(this.props.info.id)}
+              onClick={deleteItem}
               type="button"
               className="btn btn-danger mr-2"
             >
@@ -32,11 +25,9 @@ class Product extends Component {
           </div>
         </div>
       </li>
-    );
-  }
-}
+    </>
+  );
+};
+
 // As we are not adding anything to the state, we dont need mapstatetoprops
-export default connect(
-  null,
-  { deleteProduct }
-)(Product);
+export default Product;

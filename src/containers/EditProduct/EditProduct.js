@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { showProduct } from "../actions/productActions";
-import { editProduct } from "../actions/productActions";
+import { showProduct, editProduct } from "../../actions/products";
 
 class EditProduct extends Component {
   state = {

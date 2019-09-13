@@ -4,7 +4,7 @@ import {
   DELETE_PRODUCT,
   ADD_PRODUCT,
   EDIT_PRODUCT
-} from "../actions/types";
+} from "../../constants/products";
 
 // Each reducer has its own state
 
@@ -12,7 +12,7 @@ const initialState = {
   products: []
 };
 
-export default function(state = initialState, action) {
+export const ProductReducers = (state = initialState, action) => {
   switch (action.type) {
     case SHOW_PRODUCTS:
       return {
@@ -51,4 +51,4 @@ export default function(state = initialState, action) {
     default:
       return state;
   }
-}
+};
