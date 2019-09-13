@@ -1,44 +1,38 @@
 {
   "products": [
     {
-      "id": 0,
-      "name": "Pastel de Vainillita",
-      "price": "100"
+      "name": "pastel de cerdo",
+      "price": "5",
+      "id": 0
     },
     {
-      "id": 2,
-      "name": "Pastel 4",
-      "price": "50"
+      "name": "crema de puerco",
+      "price": "30",
+      "id": 1
     },
     {
-      "name": "Pastel de Chocolate",
-      "price": "60",
+      "name": "flan de morcilla",
+      "price": "30",
+      "id": 2
+    },
+    {
+      "name": "nacho",
+      "price": "21",
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
       "id": 5
     },
     {
-      "name": "Pastel de manzana",
-      "price": "30",
       "id": 6
     },
     {
-      "name": "wisky",
-      "price": "100",
+      "name": "Pastel 5",
+      "price": "30",
       "id": 7
-    },
-    {
-      "name": "Pastel 5",
-      "price": "100",
-      "id": 8
-    },
-    {
-      "name": "crema Catalana",
-      "price": "30",
-      "id": 9
-    },
-    {
-      "name": "Pastel 5",
-      "price": "30",
-      "id": 10
     }
   ]
 }
